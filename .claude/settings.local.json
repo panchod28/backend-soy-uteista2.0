@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(node -e \"require\\('@nestjs/config'\\); require\\('oracledb'\\); require\\('jose'\\); require\\('mysql2'\\); require\\('class-validator'\\); require\\('class-transformer'\\); console.log\\('all deps ok'\\)\")",
+      "Bash(node -e \"require\\('@nestjs/config'\\); require\\('oracledb'\\); const {createRemoteJWKSet} = require\\('jose'\\); require\\('mysql2'\\); require\\('class-validator'\\); require\\('class-transformer'\\); console.log\\('all deps ok'\\)\")",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(timeout 8 node dist/main.js)",
+      "Bash(node dist/main.js)",
+      "Bash(curl -s -w \"\\\\nHTTP %{http_code}\\\\n\" http://localhost:3000/api/v1/production/soyuteista/carnet2?email=test@test.com)",
+      "Bash(curl -s -w \"\\\\nHTTP %{http_code}\\\\n\" -H \"X-WebServiceUTSAPI-Key: f910fd9b70mshc4e59787d044bc3p10ea5ejsnbd1f4b7fe6f7\" -X POST -H \"Content-Type: application/json\" -d '{\"phone_version\":\"22.0.0\"}' http://localhost:3000/api/v1/production/soyuteista/get-app-basic-info)",
+      "Bash(curl -s -w \"\\\\nHTTP %{http_code}\\\\n\" -H \"X-WebServiceUTSAPI-Key: f910fd9b70mshc4e59787d044bc3p10ea5ejsnbd1f4b7fe6f7\" -X POST -H \"Content-Type: application/json\" -d '{\"phone_version\":\"19.0.0\"}' http://localhost:3000/api/v1/production/soyuteista/get-app-basic-info)",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(netstat -ano)",
+      "Bash(findstr :3000)",
+      "Bash(findstr LISTENING)",
+      "Bash(taskkill /PID 1368 /F)",
+      "Bash(node \"C:/Proyectos Nest/backend-soy-uteista2.0/dist/main.js\")"
+    ]
+  }
+}
